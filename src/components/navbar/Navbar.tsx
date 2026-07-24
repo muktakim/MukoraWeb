@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 import Logo from "/images/logo3.svg";
 import "./navbar.scss";
 import { useEffect, useState } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Phone } from "lucide-react";
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isCtaActive, setIsCtaActive] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100); // Add class after 50px scroll
+      setIsCtaActive(window.scrollY > 500); // Add class after 50px scroll
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -82,6 +84,14 @@ function Navbar() {
           </div>
         </div>
       </nav>
+      <a href="" 
+        className={
+          isScrolled
+            ? "btn cta-btn active"
+            : "btn cta-btn"
+        }>
+          <Phone size={18} />
+        </a>
     </>
   );
 }

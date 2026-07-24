@@ -51,7 +51,7 @@ function Home() {
           </div>
         </div>
       </section>
-      
+
       <section className="projects">
         <div className="container-lg">
           <div className="row g-2">
@@ -195,67 +195,154 @@ function Home() {
         </div>
       </section>
 
-      <div className="services">
+      <section className="services">
         <div className="service-card">
-          <div className="d-flex align-items-center justify-content-between">
-            <span>1)</span>
-            <h3>Web Design</h3>
+          <div className="container-lg">
+            <div className="d-flex align-items-center justify-content-between">
+              <span className="service_no">1)</span>
+              <h3 className="service-title">Web Design</h3>
+              <a href="" className="btn text-white">View Services</a>
+            </div>
+            <div className="service-card-content">
+              <img src="https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp" alt="" />
+              <div>
+                <h4>21+ <span>/projects done</span></h4>
+                <p>Streamline your workflows and nurture leads around the clock with intelligent, personalized communication systems.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <section className="thoughts">
-        <div className="container-lg">
-          <div className="row g-3">
-            <div className="col-md-4">
-              <div className="thought-card">
-                <img
-                  src="https://framerusercontent.com/images/lxtBXj3G7Bloek83WxPY1ZUuw0Q.png"
-                  alt=""
-                />
-                <div className="thought-card-content">
-                  <h3>Building Trust Through Clear Design</h3>
-                  <p className="mb-0">
-                    How tmughtful visual choices create a strcy— sense of
-                    reliability nuiern
-                  </p>
-                </div>
+        <div className="service-card">
+          <div className="container-lg">
+            <div className="d-flex align-items-center justify-content-between">
+              <span className="service_no">1)</span>
+              <h3 className="service-title">Web Design</h3>
+              <a href="" className="btn text-white">View Services</a>
+            </div>
+            <div className="service-card-content">
+              <img src="https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp" alt="" />
+              <div>
+                <h4>21+ <span>/projects done</span></h4>
+                <p>Streamline your workflows and nurture leads around the clock with intelligent, personalized communication systems.</p>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="thought-card">
-                <img
-                  src="https://framerusercontent.com/images/lxtBXj3G7Bloek83WxPY1ZUuw0Q.png"
-                  alt=""
-                />
-                <div className="thought-card-content">
-                  <h3>Building Trust Through Clear Design</h3>
-                  <p className="mb-0">
-                    How tmughtful visual choices create a strcy— sense of
-                    reliability nuiern
-                  </p>
-                </div>
+          </div>
+        </div>
+        <div className="service-card">
+          <div className="container-lg">
+            <div className="d-flex align-items-center justify-content-between">
+              <span className="service_no">1)</span>
+              <h3 className="service-title">Web Design</h3>
+              <a href="" className="btn text-white">View Services</a>
+            </div>
+            <div className="service-card-content">
+              <img src="https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp" alt="" />
+              <div>
+                <h4>21+ <span>/projects done</span></h4>
+                <p>Streamline your workflows and nurture leads around the clock with intelligent, personalized communication systems.</p>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="thought-card">
-                <img
-                  src="https://framerusercontent.com/images/lxtBXj3G7Bloek83WxPY1ZUuw0Q.png"
-                  alt=""
-                />
-                <div className="thought-card-content">
-                  <h3>Building Trust Through Clear Design</h3>
-                  <p className="mb-0">
-                    How tmughtful visual choices create a strcy— sense of
-                    reliability nuiern
-                  </p>
-                </div>
+          </div>
+        </div>
+        <div className="service-card">
+          <div className="container-lg">
+            <div className="d-flex align-items-center justify-content-between">
+              <span className="service_no">1)</span>
+              <h3 className="service-title">Web Design</h3>
+              <a href="" className="btn text-white">View Services</a>
+            </div>
+            <div className="service-card-content">
+              <img src="https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp" alt="" />
+              <div>
+                <h4>21+ <span>/projects done</span></h4>
+                <p>Streamline your workflows and nurture leads around the clock with intelligent, personalized communication systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="service-card">
+          <div className="container-lg">
+            <div className="d-flex align-items-center justify-content-between">
+              <span className="service_no">1)</span>
+              <h3 className="service-title">Web Design</h3>
+              <a href="" className="btn text-white">View Services</a>
+            </div>
+            <div className="service-card-content">
+              <img src="https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp" alt="" />
+              <div>
+                <h4>21+ <span>/projects done</span></h4>
+                <p>Streamline your workflows and nurture leads around the clock with intelligent, personalized communication systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="service-card">
+          <div className="container-lg">
+            <div className="d-flex align-items-center justify-content-between">
+              <span className="service_no">1)</span>
+              <h3 className="service-title">Web Design</h3>
+              <a href="" className="btn text-white">View Services</a>
+            </div>
+            <div className="service-card-content">
+              <img src="https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp" alt="" />
+              <div>
+                <h4>21+ <span>/projects done</span></h4>
+                <p>Streamline your workflows and nurture leads around the clock with intelligent, personalized communication systems.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <section className="idea">
+        <div className="container-lg">
+          <div className="idea-flex-wrap row g-3 px-5 mx-0">
+            <div className="col-md-4">
+              <div className="idea-item-wrap _01">
+                <h3 className="idea-item-number">01)</h3>
+
+                <div className="idea-item-btm-wrap">
+                  <h3 className="idea-item-title">Refined Concept</h3>
+                  <p className="idea-item-details">
+                    This stage focuses on crystallizing the core idea and ensuring its
+                    viability before significant resources are committed.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="idea-item-wrap _02">
+                <h3 className="idea-item-number">02)</h3>
+
+                <div className="idea-item-btm-wrap">
+                  <h3 className="idea-item-title">Scale Operation</h3>
+                  <p className="idea-item-details">
+                    Scaling involves expanding the successful prototype into a full, robust
+                    product or service that can handle a growing demand.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="idea-item-wrap _03">
+                <h3 className="idea-item-number">03)</h3>
+
+                <div className="idea-item-btm-wrap">
+                  <h3 className="idea-item-title">Gauge User Base</h3>
+                  <p className="idea-item-details _03">
+                    In this final step, we actively measure how well the solution is being
+                    adopted by the target audience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      
       <section className="cta">
         <div className="cta-wrapper">
           <div className="row m-0 w-100 h-fill align-items-center g-0">
