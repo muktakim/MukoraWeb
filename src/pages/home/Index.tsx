@@ -195,6 +195,15 @@ function Home() {
         </div>
       </section>
 
+      <div className="services">
+        <div className="service-card">
+          <div className="d-flex align-items-center justify-content-between">
+            <span>1)</span>
+            <h3>Web Design</h3>
+          </div>
+        </div>
+      </div>
+
       <section className="thoughts">
         <div className="container-lg">
           <div className="row g-3">
