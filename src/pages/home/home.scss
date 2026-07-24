@@ -6,11 +6,12 @@
   justify-content: center;
   background-color: #ededed;
   // overflow: hidden;
-  padding: 10rem 0 2rem;
+  padding: 11rem 0 2rem;
   z-index: 0;
   background-image: radial-gradient(circle at 50% 100%, #9390d6 11%, #0000 62%);
   background-position: center;
   background-size: 90%;
+
   &::before,
   &::after {
     content: "";
@@ -25,6 +26,7 @@
     z-index: -1;
     display: none;
   }
+
   &::after {
     background-color: #7e14ff;
     bottom: auto;
@@ -32,11 +34,13 @@
     top: -2.5rem;
     right: -2.5rem;
   }
+
   .hero-content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     height: 100%;
+
     h1 {
       font-size: 10.6vw;
       text-transform: uppercase;
@@ -48,9 +52,11 @@
       //   font-weight: 400;
       // }
     }
+
     h2 {
       font-size: 2.25rem;
     }
+
     .hero-top {
       span {
         // font-size: 0.85rem;
@@ -58,15 +64,18 @@
         margin-bottom: -1rem;
       }
     }
+
     .reviews {
       display: flex;
       align-items: center;
       gap: 1rem;
       font-size: 0.85rem;
       font-weight: 500;
+
       .review-avatars {
         display: flex;
         align-items: center;
+
         img {
           width: 2.5rem;
           aspect-ratio: 1/1;
@@ -77,13 +86,16 @@
         }
       }
     }
+
     .hero-bottom {
       margin-top: auto;
+
       p {
         font-size: 1.25rem;
         font-weight: 500;
         max-width: 25rem;
       }
+
       ul {
         list-style: none;
         display: flex;
@@ -91,10 +103,12 @@
         align-items: flex-end;
         gap: 0.35rem;
         font-weight: 500;
+
         li {
           display: flex;
           gap: 0.5rem;
           align-items: center;
+
           span {
             font-size: 0.8rem;
             font-weight: 400;
@@ -105,69 +119,158 @@
     }
   }
 }
+
 .projects {
   padding: 12rem 0 6rem;
   background-color: #fff;
+
   .project-card {
     border: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+
     .project-card-img {
       border-radius: 1.25rem;
       overflow: hidden;
+
       img {
         width: 100%;
         object-fit: cover;
         height: 500px;
         transition: 0.3s linear;
+
         &:hover {
           transform: scale(1.05);
         }
       }
     }
+
     h3 {
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
     }
   }
+
   .project-col:nth-child(odd) {
     margin-top: -4rem;
   }
 }
-.thoughts {
-  background-color: #fff;
+
+.services {
   padding: 5rem 0;
-  display: none;
-  .thought-card {
+
+  .service-card {
+    padding: 2.5rem 0 2rem;
+    height: 8rem;
+    background-color: #fff;
+    border-bottom: 1.5px solid #ededed;
     position: relative;
     z-index: 0;
-    border-radius: 1rem;
+    transition: 0.4s;
     overflow: hidden;
-    img {
-      width: 100%;
-      height: 30rem;
-    }
-    .thought-card-content {
+
+    &::after {
+      content: '';
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
-      background: linear-gradient(rgba(84, 84, 84, 0) 0%, rgb(0, 0, 0) 100%);
-      opacity: 1;
       width: 100%;
-      height: 70%;
-      position: absolute;
+      height: 0;
+      z-index: -1;
+      background-color: #ededed;
+      opacity: 0.5;
+      transition: height 0.3s linear 0s;
+    }
+
+    .service_no {
+      font-family: "Geist Mono", monospace;
+      opacity: 0.75;
+    }
+
+    .service-title {
+      margin-bottom: 0;
+      font-size: 1.75rem;
+    }
+
+    .service-card-content {
       display: flex;
-      justify-content: end;
-      flex-direction: column;
-      color: #fff;
-      padding: 1.25rem;
-      h3 {
-        font-size: 1.75rem;
+      align-items: flex-end;
+      gap: 2rem;
+      padding-top: 3rem;
+      padding-left: 3rem;
+
+      img {
+        width: 22rem;
+        border-radius: 1rem;
       }
+
+      h4 {
+        font-size: 3.5rem;
+
+        span {
+          font-size: 1rem;
+          font-weight: 400;
+          opacity: 0.75;
+          margin-left: -0.25rem;
+        }
+      }
+
       p {
-        font-weight: 500;
+        width: 80%;
+        margin-bottom: 0;
+        opacity: 0.85;
+      }
+    }
+
+    &:hover {
+      height: 25rem;
+
+      &::after {
+        height: 100%;
+        transition: height 0.3s linear 0.15s;
+      }
+    }
+  }
+}
+.idea{
+  padding: 5rem 0;
+  background-color: #fff;
+  .idea-item-wrap{
+    height: 29rem;
+    padding: 1.75rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #dae9fe;
+    background-image: url(https://cdn.prod.website-files.com/6931c78c49b52e3167d8bae8/693e279fae14be12d61c5e80_Idea%20BG.svg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+    &._02{
+      background-color: #f1f1f1;
+      background-image: url(https://cdn.prod.website-files.com/6931c78c49b52e3167d8bae8/693e279f83cd164fedf88e10_Idea%20BG%2002.svg);
+    }
+    &._03{
+      background-color: #dbff9b;
+      background-image: url(https://cdn.prod.website-files.com/6931c78c49b52e3167d8bae8/693e279f79f56fb638a7d8b0_Idea%20BG%2003.svg);
+    }
+    .idea-item-number{
+      font-family: "Geist Mono", monospace;
+      opacity: 0.75;
+      font-size: 1.25rem;
+    }
+    .idea-item-btm-wrap{
+      margin-top: auto;
+      .idea-item-title{
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+      }
+      p{
+        margin-bottom: 0;
+        opacity: 0.85;
+        font-size: 1.15rem;
       }
     }
   }
@@ -175,6 +278,7 @@
 .cta {
   padding: 5rem 1rem 1rem;
   background-color: #fff;
+
   .cta-wrapper {
     position: relative;
     z-index: 0;
@@ -189,29 +293,36 @@
     align-items: center;
     justify-content: flex-start;
     color: #fff;
+
     h2 {
       font-size: 6rem;
       line-height: 1.2;
     }
+
     p {
       font-size: 1.5rem;
+
       span {
         opacity: 0.75;
       }
     }
+
     .card {
       padding: 1.25rem;
       background-color: #131313;
       color: #fff;
       border-radius: 0.85rem;
       border: 0;
+
       h4 {
         margin-bottom: 1rem;
       }
+
       p {
         font-size: 1rem;
       }
     }
+
     .cta-contact {
       background-color: #131313;
       width: 100%;
@@ -227,6 +338,7 @@
     }
   }
 }
+
 .h-fill {
   height: -webkit-fill-available;
 }
