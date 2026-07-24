@@ -86,7 +86,7 @@ function Navbar() {
       </nav>
       <a href="" 
         className={
-          isScrolled
+          isCtaActive
             ? "btn cta-btn active"
             : "btn cta-btn"
         }>
