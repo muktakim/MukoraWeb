@@ -1,5 +1,6 @@
 import { Footprints, Zap } from "lucide-react";
 import "./home.scss";
+import Pricing from "../../components/pricing/Pricing";
 function Home() {
   return (
     <>
@@ -195,6 +196,8 @@ function Home() {
         </div>
       </section>
 
+      <Pricing />
+
       <section className="services">
         <div className="service-card">
           <div className="container-lg">
@@ -342,7 +345,7 @@ function Home() {
 
         </div>
       </section>
-      
+
       <section className="cta">
         <div className="cta-wrapper">
           <div className="row m-0 w-100 h-fill align-items-center g-0">
