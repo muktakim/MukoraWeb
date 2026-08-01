@@ -1,4 +1,5 @@
 import './service-details.scss';
+import { ChevronRight } from "lucide-react";
 function ServiceDetails() {
   return (
     <>
@@ -31,17 +32,17 @@ function ServiceDetails() {
               <p>Our service is designed to deliver comprehensive solutions tailored to meet your unique needs. From start to finish, we focus on efficiency, quality, and exceptional customer experience. Whether it’s streamlining processes, providing expert guidance, or offering reliable support, our service ensures that you achieve your goals with confidence and ease.</p>
               <h3>Marketing & Strategy:</h3>
               <ul className="mb-4">
-                <li>Develop data-driven marketing campaigns that reach the right audience</li>
-                <li>Define and strengthen your brand identity to differentiate your business</li>
-                <li>Continuously track, measure, and optimize marketing efforts using actionable</li>
-                <li>Align marketing initiatives across multiple channels, ensuring a cohesive message</li>
+                <li><ChevronRight size={20} /> Develop data-driven marketing campaigns that reach the right audience</li>
+                <li><ChevronRight size={20} /> Define and strengthen your brand identity to differentiate your business</li>
+                <li><ChevronRight size={20} /> Continuously track, measure, and optimize marketing efforts using actionable</li>
+                <li><ChevronRight size={20} /> Align marketing initiatives across multiple channels, ensuring a cohesive message</li>
               </ul>
               <h3>Marketing Automation</h3>
               <ul>
-                <li>Automatically engage and nurture prospects through personalized email</li>
-                <li>Segment audiences based on behavior, preferences, and demographics</li>
-                <li>Schedule and execute multi-channel campaigns seamlessly, reducing manual effort</li>
-                <li>Monitor campaign results in real-time, enabling data-driven</li>
+                <li><ChevronRight size={20} /> Automatically engage and nurture prospects through personalized email</li>
+                <li><ChevronRight size={20} /> Segment audiences based on behavior, preferences, and demographics</li>
+                <li><ChevronRight size={20} /> Schedule and execute multi-channel campaigns seamlessly, reducing manual effort</li>
+                <li><ChevronRight size={20} /> Monitor campaign results in real-time, enabling data-driven</li>
               </ul>
             </div>
           </div>
@@ -63,20 +64,28 @@ function ServiceDetails() {
             <div className="col-md-8 ps-lg-4">
               <div className="row">
                 <div className="col-md-3">
-                  <h3>200%</h3>
-                  <p>Satisfaction</p>
+                  <div className="card user-stats">
+                    <h3>200%</h3>
+                    <p>Satisfaction</p>
+                  </div>
                 </div>
                 <div className="col-md-3">
-                  <h3>200%</h3>
-                  <p>Satisfaction</p>
+                  <div className="card user-stats">
+                    <h3>270K+</h3>
+                    <p>Project Done</p>
+                  </div>
                 </div>
                 <div className="col-md-3">
-                  <h3>200%</h3>
-                  <p>Satisfaction</p>
+                  <div className="card user-stats">
+                    <h3>230%</h3>
+                    <p>Increased Organic</p>
+                  </div>
                 </div>
                 <div className="col-md-3">
-                  <h3>200%</h3>
-                  <p>Satisfaction</p>
+                  <div className="card user-stats">
+                    <h3>3M</h3>
+                    <p>Revenue</p>
+                  </div>
                 </div>
               </div>
             </div>

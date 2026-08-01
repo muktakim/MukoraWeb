@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "title": "Web Design",
+      "projects": "21+",
+      "description": "Streamline your workflows and nurture leads around the clock with intelligent, personalized communication systems.",
+      "image": "https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp"
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Design",
+      "projects": "18+",
+      "description": "Create intuitive user experiences that improve engagement and customer satisfaction.",
+      "image": "https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp"
+    },
+    {
+      "id": 3,
+      "title": "Web Development",
+      "projects": "35+",
+      "description": "Build fast, scalable, and responsive web applications tailored to your business.",
+      "image": "https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp"
+    },
+    {
+      "id": 4,
+      "title": "SEO Optimization",
+      "projects": "15+",
+      "description": "Increase your website visibility and drive more organic traffic.",
+      "image": "https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp"
+    },
+    {
+      "id": 5,
+      "title": "Brand Identity",
+      "projects": "12+",
+      "description": "Develop a strong brand presence with modern and memorable visuals.",
+      "image": "https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp"
+    },
+    {
+      "id": 6,
+      "title": "Digital Marketing",
+      "projects": "28+",
+      "description": "Reach your audience effectively through data-driven marketing campaigns.",
+      "image": "https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942150f0e7c5f335fe61633_Service%20Image%2004_compressed.webp"
+    }
+  ]

@@ -19,16 +19,37 @@ body {
 .container-lg {
   max-width: 92%;
 }
-
+.page-heading{
+  font-size: 4rem;
+}
 .btn {
   border-radius: 0.5rem;
   padding: 0.65rem 1.15rem;
   font-size: 0.85rem;
-  background-color: #101010;
   border: 0;
+  font-weight: 500;
+  transition: 0.3s linear;
 
-  &:hover {
-    background-color: #101010;
+  &.btn-dark {
+    background: #101010;
+    color: #fff;
+
+    &:hover {
+      background: #080808;
+    }
+  }
+
+  &.btn-light {
+    background: #fff;
+    color: #101010;
+  }
+
+  &.btn-primary {
+    background-color: #8750f7;
+
+    &:hover {
+      background: #7a45e3;
+    }
   }
 }
 
@@ -61,4 +82,200 @@ body {
     opacity: 0.65;
     display: none;
   }
+
+  &.v2 {
+    text-align: left;
+
+    h1 {
+      font-size: 10rem;
+      font-weight: 600;
+      letter-spacing: -4px;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      max-width: 30%;
+      margin: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+.idea {
+  padding: 5rem 0;
+  background-color: #fff;
+
+  .idea-item-wrap {
+    height: 29rem;
+    padding: 1.75rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #dae9fe;
+    background-image: url(https://cdn.prod.website-files.com/6931c78c49b52e3167d8bae8/693e279fae14be12d61c5e80_Idea%20BG.svg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    &._02 {
+      background-color: #f1f1f1;
+      background-image: url(https://cdn.prod.website-files.com/6931c78c49b52e3167d8bae8/693e279f83cd164fedf88e10_Idea%20BG%2002.svg);
+    }
+
+    &._03 {
+      background-color: #dbff9b;
+      background-image: url(https://cdn.prod.website-files.com/6931c78c49b52e3167d8bae8/693e279f79f56fb638a7d8b0_Idea%20BG%2003.svg);
+    }
+
+    .idea-item-number {
+      font-family: "Geist Mono", monospace;
+      opacity: 0.75;
+      font-size: 1.25rem;
+    }
+
+    .idea-item-btm-wrap {
+      margin-top: auto;
+
+      .idea-item-title {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        margin-bottom: 0;
+        opacity: 0.85;
+        font-size: 1.15rem;
+      }
+    }
+  }
+}
+
+.cta {
+  padding: 5rem 1rem 1rem;
+  background-color: #fff;
+
+  .cta-wrapper {
+    position: relative;
+    z-index: 0;
+    // background-image: url(./images/cta-img.webp);
+    background-image: url(./images/cta-img.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 36rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    overflow: hidden;
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: auto;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: -1;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    h2 {
+      font-size: 6rem;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.75rem;
+
+      span {
+        opacity: 0.75;
+      }
+    }
+
+    hr {
+      opacity: 0.1;
+    }
+
+    .card {
+      padding: 1.25rem;
+      background-color: #13131315;
+      backdrop-filter: blur(10px);
+      color: #fff;
+      border-radius: 0.85rem;
+      border: 0;
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .cta-contact {
+      background-color: #fff;
+      width: 100%;
+      border-radius: 1.15rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      color: var(--black);
+      font-weight: 500;
+      position: relative;
+      z-index: 0;
+      padding: 2rem;
+      color: #101010;
+
+      h3 {
+        font-weight: 600;
+        font-size: 2.25rem;
+        margin-bottom: 1.75rem;
+
+        span {
+          opacity: 0.65;
+        }
+      }
+
+      label {
+        font-size: 0.85rem;
+        display: block;
+        margin-bottom: 0.4rem;
+      }
+
+      .form-control {
+        background-color: rgb(245, 245, 245);
+        border: 0 !important;
+        padding: 1rem 1.25rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border-radius: 0.65rem;
+
+        &:focus {
+          box-shadow: 0 0 0 0.25rem #9390d671;
+          background-color: #fff;
+        }
+
+        &::placeholder {
+          opacity: 0.65;
+        }
+      }
+
+      .btn {
+        padding: 1rem 1.25rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border-radius: 0.65rem;
+      }
+    }
+  }
+}
+
+.h-fill {
+  height: -webkit-fill-available;
 }

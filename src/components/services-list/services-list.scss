@@ -1,0 +1,76 @@
+.services-list {
+    padding: 5rem 0;
+
+    .service-card {
+        padding: 2.5rem 0 2rem;
+        height: 8rem;
+        background-color: #fff;
+        border-bottom: 1.5px solid #ededed;
+        position: relative;
+        z-index: 0;
+        transition: 0.4s;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            z-index: -1;
+            background-color: #ededed;
+            opacity: 0.5;
+            transition: height 0.3s linear 0s;
+        }
+
+        .service_no {
+            font-family: "Geist Mono", monospace;
+            opacity: 0.75;
+        }
+
+        .service-title {
+            margin-bottom: 0;
+            font-size: 1.75rem;
+        }
+
+        .service-card-content {
+            display: flex;
+            align-items: flex-end;
+            gap: 2rem;
+            padding-top: 3rem;
+            padding-left: 3rem;
+
+            img {
+                width: 22rem;
+                border-radius: 1rem;
+            }
+
+            h4 {
+                font-size: 3.5rem;
+
+                span {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    opacity: 0.75;
+                    margin-left: -0.25rem;
+                }
+            }
+
+            p {
+                width: 80%;
+                margin-bottom: 0;
+                opacity: 0.85;
+            }
+        }
+
+        &:hover {
+            height: 25rem;
+
+            &::after {
+                height: 100%;
+                transition: height 0.3s linear 0.15s;
+            }
+        }
+    }
+}

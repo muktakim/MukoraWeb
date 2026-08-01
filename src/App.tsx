@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import "./styles.scss";
 import Home from "./pages/home/Index";
-import AboutUs from "./pages/about-us/Index";
+import Projects from "./pages/projects/Index";
 import Services from "./pages/services/Index";
 import ServiceDetails from "./pages/serviceDetails/ServiceDetails";
 import ContactUs from "./pages/contact-us/Index";
@@ -16,7 +16,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
+        {/* <Route path="/about" element={<AboutUs />} /> */}
+        <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/service-details" element={<ServiceDetails />} />
         <Route path="/contact" element={<ContactUs />} />

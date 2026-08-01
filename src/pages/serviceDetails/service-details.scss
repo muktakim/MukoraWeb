@@ -2,7 +2,8 @@ p,
 li {
     font-size: 1.15rem;
     font-weight: 500;
-    opacity: 0.85;
+    opacity: 0.75;
+    line-height: 1.5;
 }
 
 h2 {
@@ -20,8 +21,27 @@ h3 {
 ul {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.35rem;
     margin: 0;
-    list-style-image: url('https://cdn.prod.website-files.com/6931c78c49b52e3167d8bae8/694186d8855dac155cbab3a0_Service%20Icon%20(1).svg');
-    padding-left: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.user-stats {
+    border: 0;
+    background: none;
+
+    // padding: 1rem;
+    // border-radius: 0.5rem;
+    // text-align: center;
+    h3 {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
 }

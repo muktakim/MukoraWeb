@@ -30,9 +30,9 @@ function Navbar() {
         }
       >
         <div className="container-lg">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <img src={Logo} width={50} alt="" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -53,45 +53,39 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/projects">
                   Projects
                   <span>02</span>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/services">
                   Services
                   <span>03</span>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Thoughts
-                  <span>04</span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/contact">
                   Contact
                   <span>05</span>
                 </Link>
               </li>
             </ul>
-            <button className="btn btn-primary d-flex gap-1 align-items-center pe-3">
+            <button className="btn btn-dark d-flex gap-1 align-items-center pe-3">
               Book a call
               <ArrowUpRight size={14} />
             </button>
           </div>
         </div>
       </nav>
-      <a href="" 
+      <a href=""
         className={
           isCtaActive
             ? "btn cta-btn active"
             : "btn cta-btn"
         }>
-          <Phone size={18} />
-        </a>
+        <Phone size={18} />
+      </a>
     </>
   );
 }
