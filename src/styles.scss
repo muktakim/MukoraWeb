@@ -33,32 +33,25 @@ body {
 }
 
 .page-header {
-  background-color: #fff;
-  padding: 14rem 0 4rem;
+  // background-color: #fff;
+  padding: 12rem 0 3rem;
   position: relative;
+  text-align: center;
 
   h1 {
-    font-size: 10rem;
+    font-size: 5rem;
     font-weight: 600;
     letter-spacing: -1px;
-    margin-bottom: 5rem;
+    margin-bottom: 0.75rem;
   }
 
   p {
-    font-size: 1.85rem;
+    font-size: 1.35rem;
     font-weight: 500;
     max-width: 55%;
     margin: auto;
     opacity: 0.75;
-    letter-spacing: -1px;
-
-    span {
-      display: block;
-
-      &:nth-child(1) {
-        padding-left: 6.5rem;
-      }
-    }
+    letter-spacing: -0.75px;
   }
 
   .ph-small-text {

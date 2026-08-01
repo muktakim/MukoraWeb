@@ -1,0 +1,27 @@
+p,
+li {
+    font-size: 1.15rem;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+h2 {
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0;
+    list-style-image: url('https://cdn.prod.website-files.com/6931c78c49b52e3167d8bae8/694186d8855dac155cbab3a0_Service%20Icon%20(1).svg');
+    padding-left: 25px;
+}
