@@ -9,20 +9,21 @@ function ProjectList() {
           {projects.map((project) => (
             <div className="col-md-6 project-col" key={project.id}>
               <div className="card project-card">
+                <div className="project-card-header">
+                  <h3 className="mb-0">{project.title}</h3>
+                  <span className="me-auto">/{project.year}</span>
+                  <div className="pc-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
                 <div className="project-card-img">
                   <img
                     src={project.image}
                     className="w-100"
                     alt={project.title}
                   />
-                </div>
-
-                <div className="d-flex justify-content-between w-100 mb-3">
-                  <h3 className="mb-0">{project.title}</h3>
-
-                  <a href="#" className="btn btn-dark">
-                    View Project
-                  </a>
                 </div>
               </div>
             </div>

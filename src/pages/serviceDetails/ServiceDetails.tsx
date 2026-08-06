@@ -2,6 +2,7 @@ import "./service-details.scss";
 import { ChevronRight } from "lucide-react";
 import { useParams } from "react-router-dom";
 import services from "../../data/services.json";
+import ParallaxImage from "../../components/parallax-image/ParallaxImage";
 function ServiceDetails() {
   const { slug } = useParams();
 
@@ -21,8 +22,13 @@ function ServiceDetails() {
       </section>
       <section className="service-details py-5">
         <div className="container-lg">
-          <div className="mb-5">
-            <img src={service.image} className="w-100 rounded-5" alt="" />
+          <div className="mb-5 rounded-5 overflow-hidden">
+            <ParallaxImage
+              src={service.image}
+              alt={service.title}
+              speed={0.5}
+              height="600px"
+            />
           </div>
 
           {service.detailContentSections?.map((block, index) => (
@@ -49,11 +55,12 @@ function ServiceDetails() {
             </div>
           ))}
 
-          <div className="my-5">
-            <img
-              src="https://cdn.prod.website-files.com/69403ed6d70919e8711c1698/6942151587d8a7897d9ff53d_Rich%20Image_compressed-p-1600.webp"
-              className="w-100 rounded-5"
-              alt=""
+          <div className="my-5 rounded-5 overflow-hidden">
+            <ParallaxImage
+              src={service.image}
+              alt={service.title}
+              speed={0.5}
+              height="600px" 
             />
           </div>
           <div className="row mb-4">

@@ -5,6 +5,7 @@ import Process from "../../components/Process";
 import ProjectList from "../../components/project-list/ProjectList";
 import FAQ from "../../components/faq/FAQ";
 import Logo from "/images/logo3.svg";
+import { ChevronRight } from "lucide-react";
 function Home() {
   return (
     <>
@@ -60,22 +61,32 @@ function Home() {
       <section className="projects">
         <div className="container-lg">
           <div className="common-heading-wrap">
-            <h2 className="page-heading">Our Best Works</h2>
-            <div className="cta-content">
-              <p className="mb-2">
-                We fuel bold ideas, driving them forward with sharp strategy
-              </p>
-              <a href="" className="btn btn-primary">Let's Begin</a>
-            </div>
+            <span>// Our best works</span>
+            <h2 className="page-heading">Projects</h2>
+            <p>We’ve helped businesses across industries achieve their goals. Here are some of our recent projects.</p>
           </div>
         </div>
         <ProjectList />
       </section>
-      <section className="services">
+      <section className="services pt-0">
+        <div className="container-lg">
+          <div className="common-heading-wrap">
+            <span>// What we do</span>
+            <h2 className="page-heading">Services</h2>
+            {/* <p>We’ve helped businesses across industries achieve their goals. Here are some of our recent projects.</p> */}
+          </div>
+        </div>
         <ServicesList />
       </section>
-      <Process />
-      <Pricing />
+      <section className="process pt-0">
+        <div className="container-lg">
+          <div className="common-heading-wrap mb-5">
+            <h2 className="page-heading text-center">Process We Follow</h2>
+          </div>
+        </div>
+        <Process />
+      </section>
+      {/* <Pricing /> */}
       {/* <FAQ /> */}
     </>
   );

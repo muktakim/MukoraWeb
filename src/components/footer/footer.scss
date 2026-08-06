@@ -1,0 +1,30 @@
+footer {
+    padding: 7rem 0;
+    // background-image: url(https://cdn.prod.website-files.com/69c9c6ff172a17b5ee392b4f/69fd774bc2aefe6f66c7b325_noise-overlay.avif);
+    .footer-heading {
+        font-size: 1.25rem;
+    }
+
+    .footer-menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        li {
+            line-height: normal;
+        }
+
+        a {
+            font-size: 1rem;
+            line-height: normal;
+            text-decoration: none;
+            color: #101010;
+        }
+    }
+    h2{
+        font-size: 4rem;
+    }
+}

@@ -119,24 +119,41 @@
     }
   }
 }
+
 .projects {
-  padding: 6rem 0 6rem;
-  background-color: #fff;
+  padding: 6rem 0;
+}
+
+.common-heading-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  span {
+    font-weight: 600;
+    font-size: 1.25rem;
+    width: 16rem;
+  }
+
+  p {
+    margin-bottom: 0;
+    opacity: 0.75;
+    max-width: 18rem;
+    font-size: 1rem;
+    margin-left: auto;
+  }
+
   .page-heading {
-    letter-spacing: -3px;
+    font-size: 8vw;
+    letter-spacing: -4px;
     margin-bottom: 0;
   }
-  .common-heading-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8rem;
-    .cta-content {
-      max-width: 16.25rem;
-      margin-left: auto;
-    }
-    p {
-      margin-bottom: 0;
-      opacity: 0.75;
-    }
-  }
+}
+
+.services {
+  padding: 6rem 0;
+}
+
+.process {
+  padding: 6rem 0;
 }

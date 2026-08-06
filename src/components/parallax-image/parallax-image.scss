@@ -1,0 +1,15 @@
+.parallax-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; // extra height so the translated image never shows empty edges
+    object-fit: cover;
+    will-change: transform;
+  }
+}
